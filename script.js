@@ -1,51 +1,77 @@
 
 function saveDetails() {
   //validate all inputs first
-  let valid = true;
+  var message = "";
+  //if validation fails, function returns the
+  // data that needs to be checked by the user
 
-  valid = validateEmail();
-  valid = validateUsername();
-  valid = validateName();
-  valid = validateGender();
-  valid = validateAddress();
-  valid = validateMobile();
-  valid = validateDob();
-  valid = validateCreditCard();
+  message = message + validateEmail();
+  message = message + validateUsername();
+  message = message + validateTitle();
+  message = message + validateName();
+  message = message + validateGender();
+  message = message + validateAddress();
+  message = message + validateMobile();
+  message = message + validateDob();
+  message = message + validateCreditCard();
+  message = message +  validatePassword();
+  message = message + validateSecurityQ();
 
 
-  if (valid == true) {
+  if (message == "") {
     alert("Validation passed!");
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+  } else {
+    if (message[0] == ",") {
+      message = message.replace(/^,/, '');
+    }
+    message = message.trim();
+
+    alert("Invalid " + message + " entered.");
   }
 }
 
 function validateEmail() {
-  return true;
+  return "";
 }
 
 function validateUsername() {
-  return true;
+  //after validation, if no issues, return ""
+  //otherwise, return " username"
+  //remember to include leading space!
+  return "";
 }
 
+function validateTitle() {
+  return "";
+}
 function validateName() {
-  return true;
+  return "";
 }
 
 function validateGender() {
-  return true;
+  return "";
 }
 
 function validateAddress() {
-  return true;
+  return "";
 }
 
 function validateMobile() {
-  return true;
+  return "";
 }
 function validateDob() {
-  return true;
+  return "";
+}
+
+function validatePassword() {
+  return "";
 }
 
 function validateCreditCard() {
-  return true;
+  return "";
+}
+
+function validateSecurityQ() {
+  return "";
 }
