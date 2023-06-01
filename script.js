@@ -33,6 +33,7 @@ function saveDetails() {
 
 function validateEmail() {
   return "";
+  //Peter Mawere
 }
 
 function validateUsername() {
