@@ -32,8 +32,17 @@ function saveDetails() {
 }
 
 function validateEmail() {
-  return "";
+
   //Peter Mawere
+  var x = document.getElementById("email").value;
+  let symbolCheck = x.includes("@" && ".com");
+  if (x == "" && symbolCheck == false) {
+    return "Email";
+  }
+  while (x != "" && symbolCheck == true) {
+    return "";
+  }
+
 }
 
 function validateUsername() {
