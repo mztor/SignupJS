@@ -74,6 +74,7 @@ function validatePassword() {
 }
 
 function validateCreditCard() {
+  //Isaac is here :)
   return "";
 }
 
