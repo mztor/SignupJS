@@ -72,6 +72,11 @@ function validateCreditCard() {
   return "";
 }
 
+// Andrew was here 😎
 function validateSecurityQ() {
+  //after validation, if no issues, return ""
+  //otherwise, return ", security question"
+  //remember to include leading space!
+
   return "";
 }
