@@ -81,11 +81,19 @@ function validateCreditCard() {
   return "";
 }
 
-// Andrew was here 😎
 function validateSecurityQ() {
-  //after validation, if no issues, return ""
-  //otherwise, return ", security question"
-  //remember to include leading space!
+  var message = "";
+  var question = document.getElementById("secQ1").value;
+  var answer = document.getElementById("secA1").value;
 
-  return "";
+  // checks security question has option selected
+  if (question == "") {
+    message += ", security question";
+  }
+  // checks security answer has a string entered
+  if (answer == "") {
+    message += ", security answer";
+  }
+
+  return message;
 }
