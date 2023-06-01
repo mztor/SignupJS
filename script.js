@@ -69,6 +69,7 @@ function validatePassword() {
 }
 
 function validateCreditCard() {
+  // Isaac G.E. Barrett Function
   return "";
 }
 
