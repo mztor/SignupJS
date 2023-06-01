@@ -69,7 +69,7 @@ function validatePassword() {
 }
 
 function validateCreditCard() {
-  // Isaac G.E. Barrett Function
+  //Isaac is here :)
   return "";
 }
 
