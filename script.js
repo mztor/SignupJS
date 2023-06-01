@@ -44,6 +44,7 @@ function validateUsername() {
 }
 
 function validateTitle() {
+  // ZIAD WAS HERE BIG DOGGGG
   return "";
 }
 function validateName() {
