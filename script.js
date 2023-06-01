@@ -40,6 +40,7 @@ function validateUsername() {
   //after validation, if no issues, return ""
   //otherwise, return " username"
   //remember to include leading space!
+  //Giuseppe
   return "";
 }
 
