@@ -54,9 +54,9 @@ function validateName() {
 }
 
 function validateGender() {
-  return ""; // noah was here
-  //erthfghdfghfbrgbgfn
-  //sgghfrghythgbfgbgf
+  var gender = document.getElementById('genders');
+  return "";
+
 }
 
 function validateAddress() {
