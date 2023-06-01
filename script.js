@@ -72,6 +72,7 @@ function validateDob() {
 }
 
 function validatePassword() {
+  //harry epic code also ziad is silly
   return "";
 }
 
