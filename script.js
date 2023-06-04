@@ -72,8 +72,12 @@ function validateDob() {
 }
 
 function validatePassword() {
-  //harry epic code also ziad is silly
-  return "";
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
 }
 
 function validateCreditCard() {
