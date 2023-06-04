@@ -36,6 +36,13 @@ function validateEmail() {
 }
 
 function validateUsername() {
+  console.log (document.getElementById("username").value);
+  var username = document.getElementById("username").value;
+  if(username == ""){
+    return "username";}
+  else{
+    return "";}
+
   //after validation, if no issues, return ""
   //otherwise, return " username"
   //remember to include leading space!
