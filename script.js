@@ -56,6 +56,10 @@ function validateUsername() {
 function validateTitle() {
   // ZIAD WAS HERE BIG DOGGGG
   return "";
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
 }
 function validateName() {
   // Pi Was Here
@@ -70,6 +74,7 @@ function validateGender() {
 
 function validateAddress() {
   return "";
+  var address = document.getElementById(elementid: "street").value
 }
 
 function validateMobile() {
