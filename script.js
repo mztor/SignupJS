@@ -94,13 +94,14 @@ function validateSecurityQ() {
   var message = "";
   var question = document.getElementById("secQ1").value;
   var answer = document.getElementById("secA1").value;
+  var maxAnswerLength = 50
 
   // checks security question has option selected
   if (question == "") {
     message += ", security question";
   }
-  // checks security answer has a string entered
-  if (answer == "") {
+  // checks security answer has a string entered and that it is an appropriate length
+  if (answer == "" || answer.length > maxAnswerLength) {
     message += ", security answer";
   }
 
