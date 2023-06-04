@@ -63,9 +63,13 @@ function validateName() {
 }
 
 function validateGender() {
-  var gender = document.getElementById('genders');
-  return "";
-
+  var gender = document.getElementById('genders').value;
+  if (gender == "enter"){
+    return "gender";
+  }
+  else {
+    return "";
+  }
 }
 
 function validateAddress() {
