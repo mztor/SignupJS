@@ -36,10 +36,13 @@ function validateEmail() {
   //Peter Mawere
   var x = document.getElementById("email").value;
   let symbolCheck = x.includes("@" && ".com");
-  if (x == "" && symbolCheck == false) {
+  let spaceCheck = x.includes(" ");
+  let symbolFirst = x.charAt(0);
+  //var symbolPosition = symbolFirst.match(/^([A-Z,a-z])/);
+  if (x === "" && symbolCheck === false && spaceCheck === true ) { //&& symbolPosition === false) {
     return "Email";
   }
-  while (x != "" && symbolCheck == true) {
+  if (x !== "" && symbolCheck === true && spaceCheck === false ) { //&& symbolPosition === true ) {
     return "";
   }
 
